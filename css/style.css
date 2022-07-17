@@ -1,0 +1,345 @@
+ /* body{
+     height: 1000px;
+     width: 1000px;
+ } */
+ /* .container{
+    display: grid;
+    /* grid-gap: 1rem; */
+    /* grid-template-areas:
+             'navbar navbar navbar'
+             'home home home'
+             'services services services'
+             'client-section client-section client-section'
+             'contact contact contact'
+                        ;
+} */
+/* #navbar{
+    grid-area: navbar;
+}
+#home{
+    grid-area: home;
+}
+#services{
+    grid-area: services;
+}
+#client-section{
+    grid-area: client-section;
+}
+#contact{
+    grid-area: contact;
+}
+
+@media only screen and (max-width:300px) {
+    body {
+        background-color: red;
+    }
+}
+@media only screen and (min-width: 300px) and (max-width:500px) {
+    body {
+        background-color: blue;
+    }
+}
+@media (min-width: 500px) and (max-width:800px) {
+    body {
+        background-color: yellow;
+    }
+}
+@media (min-width: 800px) {
+    body {
+        background-color: green;
+    }
+}   */
+ *{
+    margin: 0;
+    padding: 0;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar::before{
+    content: "";
+    /* background-color: darkgrey; */
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: .9;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* position: absolute; */
+    /* position: absolute; */
+    
+    /* position: sticky;
+    top:0px;
+   */
+}
+
+#navbar ul{
+    display: flex;
+    /* align-items: center; */
+    /* text-decoration: none; */
+    list-style: none;
+    /* padding: 5px; */
+    margin: 5px;
+}
+
+#navbar ul li a{
+    padding: 2px 120px;
+    color: white;
+    font-size: 80px;
+    display: block;
+    margin: auto;
+    text-decoration: none;
+    /* font-family: 'Roboto', sans-serif;; */
+}
+#navbar ul li a:hover{
+    color:black;
+    border-radius: 15px;
+    background-color: lightgray;
+}
+
+#logo{
+    margin: 10px 15px;
+
+  
+}
+#logo img{
+    height: 175px;
+    width: 200px;
+    margin: 5px 10px;
+}
+
+/* section */
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 1377px;
+    /* margin: 600px; */
+ 
+}
+#home::before{
+    content: "";
+    background: url(../img/bg2.jpg)no-repeat center center/cover;
+    height: 95%;
+    width: 100%;
+    position: absolute;
+    z-index: -1; 
+    opacity: .9;
+}
+ .primary{
+    color: white;
+   
+    /* font-family: 'Roboto', sans-serif;; */
+    font-size: 8rem;
+    padding: 65px;
+    margin-top: 80px;
+  
+}
+ .h-primary-center{
+    color: black;
+   
+    /* font-family: 'Roboto', sans-serif;; */
+    font-size: 8rem;
+    padding: 65px;
+    margin-top: 460px;
+    text-align: center;
+    justify-content: center;
+    /* display: inline; */
+    /* border: 2px solid brown; */
+    /* background-color: grey; */
+  
+}
+ .h1-primary-center{
+    color: black;
+    font-size: 8rem;
+    padding: 65px;
+margin-top: 30px;
+    text-align: center;
+    justify-content: center;
+   
+}
+ .h2-primary-center{
+    color: black;
+    font-size: 8rem;
+    padding: 211px;
+    margin-top: 38px;
+    text-align: center;
+    justify-content: center;
+   
+}
+ .h-secondary-center{
+    color: black;
+   
+    /* font-family: 'Roboto', sans-serif;; */
+    font-size: 5rem;
+    padding: 65px;
+    /* margin-top: 460px; */
+    /* text-align: center; */
+    justify-content: center;
+  
+}
+.center{
+    text-align: center;
+    font-size: 2rem;
+    font-family: cursive;
+    justify-content: center;
+}
+
+#home p{
+   
+    padding: 30px;
+    color: white;
+    font-family: cursive;
+     font-size: 3.6rem;
+     margin-bottom: 15px;
+    
+    
+}
+.btn{
+    padding: 35px;
+    border: 2px solid black;
+    font-size:50px ;
+   background-color:black;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   margin: 15px;
+   border-radius: 10px;
+   
+   
+   
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+.btn:hover{
+  
+    font-size:55px ;
+   background-color:brown;
+   color: white;
+    
+}
+
+.service{
+    display: flex;
+    margin: 34px;
+    padding: 34px;
+}
+.box{
+    margin: 30px;
+    margin-left: 137px;
+    border: 5px solid brown ;
+    border-radius: 50px;
+    background-color: rgb(233, 229, 229);
+    padding: 0px 342px;
+    margin-top: -52px;
+    height: 1240px;
+    width: 854px;
+}
+#client-section{
+    height: 1400px;
+   
+}
+img{
+    height: 467px;
+    width: 819px;
+    margin-top: 142px;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client-items{
+    padding: 15px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background:url('../img/bg4.jpg')no-repeat center center/cover;
+    height: 55%;
+    width: 100%;
+    z-index: -1;
+    opacity: .6;
+}
+#contact{
+    position: relative;
+    height:  1099px;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../img/bg5.jpg') no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    height: 250px;
+    /* font-size: 50px; */
+
+    
+}
+#contact-box form{
+    margin-top: 60px;
+  text-align: center;
+  justify-content: center;
+}
+#contact-box label{
+    font-size: 4.8rem;
+}
+.form-group{
+    font-size: 6.3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 5px;
+    
+
+}
+#name{
+    padding: 22px;
+    font-size: 4rem;
+    text-align: center;
+}
+
+#email{
+    padding: 22px;
+    font-size: 4rem;
+    text-align: center;
+}
+#city{
+    padding: 22px;
+    font-size: 4rem;
+    text-align: center;
+}
+#phone{
+    padding: 22px;
+    font-size: 4rem;
+    text-align: center;
+}
+.center-1{
+    text-align: center;
+    justify-content: center;
+    font-size: 4rem;
+}
+
+footer{
+    margin-top: 100px;
+    height: 130px;
+    background: black;
+    color: white;
+    padding: 40px;
+    font-size: 30px;
+}
+
